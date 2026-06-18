@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — S&S Studio</title>
+</head>
+<body>
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="/" class="nav-logo">
+      <div class="nav-logo-mark">SS</div>
+      <span class="nav-logo-text">S&S</span>
+      <span class="nav-logo-studio">Studio</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/services.html">Services</a></li>
+      <li><a href="/portfolio.html">Portfolio</a></li>
+      <li><a href="/contact.html" class="active">Contact</a></li>
+      <li><a href="/contact.html" class="nav-cta">Get a Quote</a></li>
+    </ul>
+  </nav>
+
+  <section class="page-header">
+    <h1>Let's build something great.</h1>
+    <p>Tell us about your project and we'll put together a free, no-obligation estimate within 24 hours.</p>
+  </section>
+
+  <section class="contact-section">
+    <div class="contact-info">
+      <h2>Get in touch</h2>
+      <p>Whether you're ready to start or just exploring options, we'd love to hear from you.</p>
+
+      <div class="contact-method">
+        <div class="contact-method-icon">✉</div>
+        <div>
+          <h4>Email</h4>
+          <p>hello@sands.studio</p>
+          <p style="font-size:0.85rem;color:var(--stone);">We respond within 2-4 hours</p>
+        </div>
+      </div>
+
+      <div class="contact-method">
+        <div class="contact-method-icon">☎</div>
+        <div>
+          <h4>Phone</h4>
+          <p>(555) 123-4567</p>
+          <p style="font-size:0.85rem;color:var(--stone);">Mon-Fri, 9am-6pm EST</p>
+        </div>
+      </div>
+
+      <div class="contact-method">
+        <div class="contact-method-icon">⌂</div>
+        <div>
+          <h4>Office</h4>
+          <p>123 Creative Lane, Suite 200<br>Brooklyn, NY 11201</p>
+        </div>
+      </div>
+    </div>
+
+    <form class="contact-form">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="Jane Smith" required>
+        </div>
+        <div class="form-group">
+          <label for="company">Company</label>
+          <input type="text" id="company" placeholder="Brighton Co.">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="jane@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="budget">Budget Range</label>
+          <select id="budget">
+            <option>Under $1,500</option>
+            <option>$1,500 - $3,500</option>
+            <option>$3,500 - $7,500</option>
+            <option>$7,500+</option>
+            <option>Not sure yet</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="project">Tell us about your project</label>
+        <textarea id="project" placeholder="What kind of website do you need? What are your goals? Timeline?" required></textarea>
+      </div>
+
+      <button type="submit" class="btn-primary">Send Message →</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="/" class="nav-logo">
+          <div class="nav-logo-mark">SS</div>
+          <span class="nav-logo-text" style="color:white">S&S</span>
+          <span class="nav-logo-studio">Studio</span>
+        </a>
+        <p>Modern, high-performance websites for businesses that mean business. No overhead, just results.</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="/">Home</a>
+        <a href="/services.html">Services</a>
+        <a href="/portfolio.html">Portfolio</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <a href="/services.html">Starter Package</a>
+        <a href="/services.html">Growth Package</a>
+        <a href="/services.html">Custom Solutions</a>
+        <a href="/services.html">SEO Audits</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p style="font-size: 0.9rem; margin-bottom: 8px;">hello@sands.studio</p>
+        <p style="font-size: 0.9rem; margin-bottom: 8px;">(555) 123-4567</p>
+        <p style="font-size: 0.9rem;">Brooklyn, NY</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 S&S Studio. All rights reserved.</p>
+      <div style="display: flex; gap: 16px;">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/contact.ts"></script>
+</body>
+</html>

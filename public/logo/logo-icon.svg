@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="ssGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#0EA5E9"/>
+    </linearGradient>
+  </defs>
+
+  <!-- SS Monogram Icon - dynamic overlapping S shapes -->
+  <!-- First S -->
+  <path d="M16 8 C16 2, 30 2, 30 12 C30 22, 16 18, 16 30 C16 42, 30 44, 30 36"
+        fill="none" stroke="url(#ssGrad)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Second S -->
+  <path d="M34 8 C34 2, 48 2, 48 12 C48 22, 34 18, 34 30 C34 42, 48 44, 48 36"
+        fill="none" stroke="url(#ssGrad)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
