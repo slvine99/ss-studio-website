@@ -4,21 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact — S&S Studio</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
 <body>
   <!-- NAV -->
   <nav class="nav">
-    <a href="/" class="nav-logo">
+    <a href="index.html" class="nav-logo">
       <div class="nav-logo-mark">SS</div>
       <span class="nav-logo-text">S&S</span>
       <span class="nav-logo-studio">Studio</span>
     </a>
     <ul class="nav-links">
-      <li><a href="/">Home</a></li>
-      <li><a href="/services.html">Services</a></li>
-      <li><a href="/portfolio.html">Portfolio</a></li>
-      <li><a href="/contact.html" class="active">Contact</a></li>
-      <li><a href="/contact.html" class="nav-cta">Get a Quote</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="contact.html" class="nav-cta">Get a Quote</a></li>
     </ul>
   </nav>
 
@@ -63,22 +64,22 @@
       <div class="form-row">
         <div class="form-group">
           <label for="name">Full Name</label>
-          <input type="text" id="name" placeholder="Jane Smith" required>
+          <input type="text" id="name" name="name" placeholder="Jane Smith" required>
         </div>
         <div class="form-group">
           <label for="company">Company</label>
-          <input type="text" id="company" placeholder="Brighton Co.">
+          <input type="text" id="company" name="company" placeholder="Brighton Co.">
         </div>
       </div>
 
       <div class="form-row">
         <div class="form-group">
           <label for="email">Email Address</label>
-          <input type="email" id="email" placeholder="jane@example.com" required>
+          <input type="email" id="email" name="email" placeholder="jane@example.com" required>
         </div>
         <div class="form-group">
           <label for="budget">Budget Range</label>
-          <select id="budget">
+          <select id="budget" name="budget">
             <option>Under $1,500</option>
             <option>$1,500 - $3,500</option>
             <option>$3,500 - $7,500</option>
@@ -90,7 +91,7 @@
 
       <div class="form-group">
         <label for="project">Tell us about your project</label>
-        <textarea id="project" placeholder="What kind of website do you need? What are your goals? Timeline?" required></textarea>
+        <textarea id="project" name="project" placeholder="What kind of website do you need? What are your goals? Timeline?" required></textarea>
       </div>
 
       <button type="submit" class="btn-primary">Send Message →</button>
@@ -101,7 +102,7 @@
   <footer class="footer">
     <div class="footer-inner">
       <div class="footer-brand">
-        <a href="/" class="nav-logo">
+        <a href="index.html" class="nav-logo">
           <div class="nav-logo-mark">SS</div>
           <span class="nav-logo-text" style="color:white">S&S</span>
           <span class="nav-logo-studio">Studio</span>
@@ -110,17 +111,17 @@
       </div>
       <div>
         <h4>Company</h4>
-        <a href="/">Home</a>
-        <a href="/services.html">Services</a>
-        <a href="/portfolio.html">Portfolio</a>
-        <a href="/contact.html">Contact</a>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
       </div>
       <div>
         <h4>Services</h4>
-        <a href="/services.html">Starter Package</a>
-        <a href="/services.html">Growth Package</a>
-        <a href="/services.html">Custom Solutions</a>
-        <a href="/services.html">SEO Audits</a>
+        <a href="services.html">Starter Package</a>
+        <a href="services.html">Growth Package</a>
+        <a href="services.html">Custom Solutions</a>
+        <a href="services.html">SEO Audits</a>
       </div>
       <div>
         <h4>Contact</h4>
@@ -138,6 +139,6 @@
     </div>
   </footer>
 
-  <script type="module" src="/src/contact.ts"></script>
+  <script type="module" src="src/contact.ts"></script>
 </body>
 </html>
