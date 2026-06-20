@@ -743,50 +743,114 @@ body {
   color: var(--stone);
 }
 
-/* =============== ADD-ONS =============== */
+/* =============== ADD-ON BUNDLES & MONTHLY =============== */
 
-.addons {
+.bundles {
   padding: var(--space-4xl) var(--space-3xl);
   background: var(--navy);
   color: white;
 }
 
-.addons-inner {
+.bundles-inner {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.addons-grid {
+.bundles-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: var(--space-lg);
 }
 
-.addon-card {
+.bundle-card {
   background: rgba(255,255,255,0.06);
   border: 1px solid rgba(255,255,255,0.1);
   border-radius: var(--radius-md);
   padding: var(--space-xl);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.addon-card h4 {
+.bundle-card.featured {
+  border-color: var(--coral);
+  background: rgba(249, 115, 22, 0.05);
+}
+
+.bundle-icon {
+  font-size: 2rem;
+  margin-bottom: var(--space-md);
+}
+
+.bundle-card h3 {
   color: white;
-  font-size: 1.15rem;
-  font-weight: 600;
+  font-size: 1.25rem;
+  font-weight: 700;
   margin-bottom: var(--space-sm);
 }
 
-.addon-card p {
-  color: rgba(255,255,255,0.6);
+.bundle-card p {
+  color: rgba(255,255,255,0.7);
   font-size: 0.9rem;
+  margin-bottom: var(--space-md);
 }
 
-.addon-card .price {
+.bundle-card .price {
   color: var(--teal);
   font-weight: 700;
   font-size: 1.25rem;
-  margin-top: var(--space-md);
+}
+
+.monthly {
+  padding: var(--space-4xl) var(--space-3xl);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.monthly-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-xl);
+}
+
+.monthly-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: var(--space-2xl);
+  display: flex;
+  gap: var(--space-xl);
+  align-items: center;
+}
+
+.monthly-icon {
+  font-size: 2.5rem;
+  background: rgba(14,165,233,0.1);
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.monthly-card-content h3 {
+  font-size: 1.5rem;
+  color: var(--navy);
+  margin-bottom: var(--space-xs);
+}
+
+.monthly-card-content p {
+  color: var(--stone);
+  margin-bottom: var(--space-md);
+}
+
+.monthly-card-content .price {
+  font-weight: 800;
+  color: var(--teal);
+  font-size: 1.25rem;
 }
 
 /* =============== PORTFOLIO =============== */
